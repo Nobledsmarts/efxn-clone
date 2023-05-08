@@ -31,6 +31,21 @@ body {
     color: #2c3e50;
     /* background: red; */
     background-color: #000;
+    /* background-color: #0c0c1e; */
+}
+
+body::befor {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../img/noise.gif");
+    z-index: -1;
+    background-color: rebeccapurple;
+    background-blend-mode: inherit;
+    opacity: 0.05;
 }
 
 ::-webkit-scrollbar {
@@ -48,6 +63,13 @@ body {
 
 .navbar{
     background-color: #000;
+}
+.navbar .navbar-brand img {
+    height: 50px;
+    width: 100px;
+    /* border: 1px solid red; */
+    object-fit: cover;
+    object-position: 100% -20px;
 }
 .navbar .container-fluid{
     padding: 0px 40px;
@@ -97,13 +119,30 @@ body {
     cursor: pointer;
 }
 
+.pc-main-feature-wrapper::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background: red;
+    opacity: 0.05;
+    background-image: url("../img/noise.gif");
+    background-color: rebeccapurple;
+    background-blend-mode: difference;
+}
 .pc-main-feature-wrapper {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: 2;
     background-image: url('../img/1.e1c70335.png');
+    /* background-position: right bottom, left top; */
+   
     background-size: cover;
     background-repeat: no-repeat;
     /* margin-top: 60px; */
@@ -426,3 +465,7 @@ body {
 html.sr .load-hidden {
     visibility: hidden;
 }
+
+/* .footer-nav .val{
+    font-size: .32rem;
+} */
