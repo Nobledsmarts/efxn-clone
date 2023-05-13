@@ -95,6 +95,7 @@ body::befor {
     text-align: center;
     display: inline-block;
     padding: 0 30px;
+    text-decoration: none;
     font-size: 16px!important;
 }
 .languageIcon {
@@ -460,12 +461,48 @@ body::befor {
     #option{
         /* background-size: 100% 100%; */
     }
+    .menu-bar{
+        display: block;
+        width: 100%;
+        background-color: #060a0b;
+    }
+    .navbar .container-fluid{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .menu-bar .tabName:hover{
+        background: #0b0a0a;
+    }
+    .navbar-nav{
+        background: #060a0b;
+    }
+    .navbar-nav .nav-item {
+        display: block;
+        text-align: left;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+    }
+    .menu-bar .tabName:first-of-type{
+        border-top: 1px solid #80808030;
+    }
+    .menu-bar{
+        padding-top: 0.8rem;
+    }
+    .menu-bar .tabName{
+        display: block;
+        text-align: left;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        border-bottom: 1px solid #111;
+    }
+
 }
 
 html.sr .load-hidden {
     visibility: hidden;
 }
 
+.
 /* .footer-nav .val{
     font-size: .32rem;
 } */
