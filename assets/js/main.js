@@ -14,7 +14,7 @@ window.addEventListener('scroll', () => {
     let optionSection = document.querySelector('#option');
     let gameSection = document.querySelector('#game');
 
-    if(isInViewport(homeSection)){
+    if(isElementVisible(homeSection)){
         return links.forEach((link) => {
             let lnk = link.getAttribute('href');
             if(lnk.slice(1) == homeSection.getAttribute('id')){
@@ -24,7 +24,7 @@ window.addEventListener('scroll', () => {
             }
         })
     }
-    if(isInViewport(spotSection)){
+    if(isElementVisible(spotSection)){
         return links.forEach((link) => {
             let lnk = link.getAttribute('href');
             if(lnk.slice(1) == spotSection.getAttribute('id')){
@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
             }
         })
     }
-    if(isInViewport(swapSection)){
+    if(isElementVisible(swapSection)){
         console.log('swap');
         return links.forEach((link) => {
             let lnk = link.getAttribute('href');
@@ -47,10 +47,21 @@ window.addEventListener('scroll', () => {
             }
         })
     }
-    else if(isInViewport(optionSection)){
+    else if(isElementVisible(optionSection)){
         return links.forEach((link) => {
             let lnk = link.getAttribute('href');
             if(lnk.slice(1) == optionSection.getAttribute('id')){
+                link.classList.add('active');
+            } else{
+                link.classList.remove('active');
+            }
+        })
+    }
+
+    else if(isElementVisible(gameSection)){
+        return links.forEach((link) => {
+            let lnk = link.getAttribute('href');
+            if(lnk.slice(1) == gameSection.getAttribute('id')){
                 link.classList.add('active');
             } else{
                 link.classList.remove('active');
@@ -64,7 +75,7 @@ window.addEventListener('scroll', () => {
     //     let section = document.querySelector(link.getAttribute('href'));
     //     console.log(section);
     //     if(section){
-    //         if(isInViewport(section)){
+    //         if(isElementVisible(section)){
     //             link.classList.add('active');
     //         } else{
     //             link.classList.remove('active');
