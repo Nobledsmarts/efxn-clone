@@ -34,8 +34,10 @@ quickComputeBtns.forEach((quickComputeBtn) => {
 // input-wrap
 
 
+console.log(gameScrollBoxToggler);
+
 gameScrollBoxToggler && gameScrollBoxToggler.addEventListener('click', () => {
-    let scrollBox = document.querySelector('.scrollBox.LK28_STYLE');
+    let scrollBox = document.querySelector('.scrollBox');
     if(scrollBox.style.display == 'none'){
         document.querySelector('.mask.mask_history').style.display = "";
         scrollBox.style.display = "block";

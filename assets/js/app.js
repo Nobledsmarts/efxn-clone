@@ -30,8 +30,7 @@
         window.addEventListener("pageshow", (event) => {
             event.persisted && setHtmlFontSize();
         });
-        
-        if (pixelRatio >= 2) {
+    if (pixelRatio >= 2) {
             let body = document.createElement("body"),
             s = document.createElement("div"); (s.style.border = ".5px solid transparent"),
             body.appendChild(s),

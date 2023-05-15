@@ -25,7 +25,6 @@ gtAndLt.forEach((gtAndLtBtn) => {
             } else {
                 gtAndLtBtn2.classList.remove(removeClass);
             }
-            
         });
     });
 });
