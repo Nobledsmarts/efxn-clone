@@ -9,6 +9,27 @@ let selections = [];
 let iconDelete = document.querySelector('.svg-icon.icon-delete');
 let gameScrollBoxToggler = document.querySelector('.issue-wrap .hash');
 
+let gtAndLt = [... document.querySelectorAll('.gtAndLt div')];
+
+console.log(gtAndLt);
+
+gtAndLt.forEach((gtAndLtBtn) => {
+    gtAndLtBtn.addEventListener('click', (e) => {
+        let gtAndLtBtn = e.currentTarget;
+        let activeClass = gtAndLtBtn.classList.contains('gt') ? 'gt-active' : 'lt-active';
+        let removeClass = gtAndLtBtn.classList.contains('gt') ? 'lt-active' : 'gt-active';
+        // activeClass = gtAndLtBtn.classList.contains('lt') ? 'lt-active' : activeClass;
+        gtAndLt.forEach((gtAndLtBtn2, idx) => {
+            if(gtAndLtBtn == gtAndLtBtn2){
+                gtAndLtBtn2.classList.add(activeClass);
+            } else {
+                gtAndLtBtn2.classList.remove(removeClass);
+            }
+            
+        });
+    });
+});
+
 console.log(gameScrollBoxToggler);
 
 let quickComputeBtns = document.querySelectorAll('.input-wrap .active');
