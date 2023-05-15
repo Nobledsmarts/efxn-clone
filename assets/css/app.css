@@ -3868,3 +3868,11 @@ svg[rtl][data-v-b995f246] {
     -o-transform: rotate(45deg);
     transform: rotate(45deg)
 }
+
+.scrollBox .issueItem>span[data-v-626dbe54]:last-child, .scrollBox .thHeader>span[data-v-626dbe54]:last-of-type {
+    justify-self: flex-end;
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end!important;
+}
