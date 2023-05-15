@@ -3515,7 +3515,7 @@ svg[rtl][data-v-b995f246] {
     z-index: 44;
 }
 
-.scrollBox.SB_STYLE, .mask.mask_history{
+.scrollBox.SB_STYLE, .mask.mask_history, .scrollBox{
     display: none;
 }
 
