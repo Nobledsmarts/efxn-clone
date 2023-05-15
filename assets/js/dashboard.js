@@ -3,7 +3,6 @@ let openGameHamburger = document.querySelector('.svg-icon.icon-zhankai_1');
 let closeGameHamburger = document.querySelector('.svg-icon.icon-zhankai_2');
 let topBoxToggler = document.querySelector('.right .dot');
 let exitGameIcon = document.querySelector('.svg-icon.icon-close');
-let detailsBackIcon = document.querySelector('.backIcon');
 let gameDetailsIcon = document.querySelector('.svg-icon.icon-explain');
 let gameInput = document.querySelector('.betOrder .input');
 let selections = [];
@@ -11,6 +10,22 @@ let iconDelete = document.querySelector('.svg-icon.icon-delete');
 let gameScrollBoxToggler = document.querySelector('.issue-wrap .hash');
 
 let quickComputeBtns = document.querySelectorAll('.input-wrap .active');
+
+let filterList = [... document.querySelectorAll('.filter-list .filter-item')];
+
+filterList.length && filterList.forEach((filterItem) => {
+    filterItem.addEventListener('click', (e) => {
+        filterList.forEach((filterItem2) => {
+            if(e.currentTarget == filterItem2){
+                filterItem2.classList.add('active');
+            } else{
+                filterItem2.classList.remove('active');
+            }
+        })
+    });
+});
+
+
 
 const truncateToDecimal = (n, dec = 3) => {
     return (Math.floor(1000 * n) / 1000).toFixed(dec);
@@ -32,7 +47,7 @@ quickComputeBtns.forEach((quickComputeBtn) => {
 
 
 gameScrollBoxToggler && gameScrollBoxToggler.addEventListener('click', () => {
-    let scrollBox = document.querySelector('.scrollBox.LK28_STYLE');
+    let scrollBox = document.querySelector('.scrollBox');
     if(scrollBox.style.display == 'none'){
         document.querySelector('.mask.mask_history').style.display = "";
         scrollBox.style.display = "block";
@@ -45,7 +60,7 @@ gameScrollBoxToggler && gameScrollBoxToggler.addEventListener('click', () => {
 
 gameDetailsIcon && gameDetailsIcon.addEventListener('click', () => location.href = 'game-details.html');
 
-detailsBackIcon && detailsBackIcon.addEventListener('click',  () => history.go(-1));
+
 
 let calculateValue = () => {
     inputValue = gameInput.value;

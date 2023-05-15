@@ -266,6 +266,9 @@ svg[rtl][data-v-b995f246] {
     display: block;
 }
 
+.gameList.noHeight.row{
+    margin: auto auto;
+} 
 
 .hotGame  .title {
     display: inline-block;
@@ -1413,6 +1416,10 @@ svg[rtl][data-v-b995f246] {
     width: 1.586667rem;
     height: 1.64rem;
 }
+.usdt-assets-item img {
+    height: 1.8rem;
+    width: 1.8rem;
+}
 .balance-container .usdt-assets .usdt-assets-content .usdt-assets-item .label {
     flex: 1;
     line-height: 1.533333rem;
@@ -1442,10 +1449,10 @@ svg[rtl][data-v-b995f246] {
     color: #333;
 }
 .balance-container .usdt-assets .usdt-assets-content .usdt-assets-btn-group .btnC{
-    line-height: 1.033333rem;
+    /* line-height: 1.033333rem; */
     font-size: 1.4rem;
     min-width: 9.2rem;
-    padding: 1.16rem 1.266667rem;
+    padding: 0.7rem 3.266667rem;
     border: .026667rem solid #e6c233;
     border-radius: .106667rem;
     color: #e6c233;
@@ -1641,23 +1648,33 @@ font-size: 1.4rem;
     display: flex;
     overflow-x: scroll;
     margin-top: .533333rem;
-    margin-bottom: .533333rem;
+    margin-bottom: 1.933333rem;
 }
 .victories-container .filter-list .filter-item {
-    padding: .733333rem;
+    padding: .433333rem;
     border-radius: .133333rem;
     background-color: #1f2630;
     margin-right: .966667rem;
     flex-shrink: 0;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+}
+.victories-container .fund-formula{
+    color: #fff;
+    font-size: 1.1rem;
+}
+.victories-container .filter-list .filter-item.active{
+    background-color: #fcd434;
+    color: #333;
 }
 .victories-container .scroll-wrap .profit {
     text-align: left;
     overflow: hidden;
     border-radius: .16rem;
+    padding: 1.4rem;
     padding-left: 1.4rem;
     padding-right: 1.4rem;
-    margin-bottom: .933333rem;
+
+    margin-bottom: 1.233333rem;
     box-shadow: 0 .213333rem .106667rem -.106667rem rgba(0,0,0,.2);
     position: relative;
     background-color: #343841;
@@ -1695,9 +1712,10 @@ font-size: 1.4rem;
 }
 
 .victories-container .scroll-wrap .profit .fund-num[data-v-63e1aaaf] {
-    font-size: .8rem;
+    font-size: 2.8rem;
+    line-height: 5rem;
     color: #fff;
-    height: 1.12rem;
+    /* height: 1.12rem; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -1715,20 +1733,25 @@ font-size: 1.4rem;
 .victories-container .scroll-wrap .items[data-v-63e1aaaf] {
     display: flex;
     flex-wrap: wrap;
+    gap: 0.6rem;
     justify-content: space-between;
 }
 .victories-container .scroll-wrap .items .item[data-v-63e1aaaf] {
-    padding: .533333rem 0;
+    padding: .933333rem 0;
     width: 48%;
     text-align: center;
     background-color: #1f2630;
     border-radius: .16rem;
     margin-bottom: .266667rem;
 }
+.victories-container .scroll-wrap .items .svg-icon{
+    height: 2.6rem;
+    width: 2.6rem;
+}
 .victories-container .scroll-wrap .items .item .item-label[data-v-63e1aaaf] {
     color: #fff;
-    line-height: 1.533333rem;
-    font-size: 1.2rem;
+    line-height: 2.533333rem;
+    font-size: 1.3rem;
     margin-top: .266667rem;
     margin-bottom: .133333rem;
 }
@@ -1747,5 +1770,66 @@ font-size: 1.4rem;
 }
 .amusement-container .banner img{
     width: 100%;
+}
+
+.usdt-assets-btn-group a {
+    text-decoration: none;
+}
+.backIconCont{
+    width: 10%;
+    padding: 10px;
+}
+.page-title-nav{
+    /* width: 95%; */
+    width: 100%;
+}
+#newPageTitle{
+    font-size: 1.6rem;
+    color: #fff;
+}
+.backIconCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.page-title{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table.dataTable{
+    font-size: 2rem !important;
+}
+table.dataTable  th, table.dataTable td{
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+#records_wrapper label{
+    font-size: 1rem;
+}
+.dataTables_paginate.paging_simple_numbers a, .dataTables_info{
+    font-size: 1rem;
+}
+.col-records{
+    overflow: auto;
+    background: #242a34;
+    padding: 10px;
+}
+#records_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.backIcon .svg-icon.icon-7{
+    color: #fff;
+    fill: #fff;
+}
+.itemBox a {
+    text-decoration: none !important;
+}
+.itemBox a:visited {
+    text-decoration: none !important;
 }
 /* amusement end*/
