@@ -1832,4 +1832,14 @@ table.dataTable  th, table.dataTable td{
 .itemBox a:visited {
     text-decoration: none !important;
 }
+
+.notification-nav-item span{
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    background: red;
+    position: absolute;
+    margin-left: -6px;
+    border-radius: 100%;
+}
 /* amusement end*/
