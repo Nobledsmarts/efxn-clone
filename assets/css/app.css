@@ -91,6 +91,12 @@ input {
         max-width: 16rem;
         margin: 0 auto;
     }
+    body{
+        max-width: 90%;
+        margin: auto !important;
+        
+    }
+    /* #app */
 }
 #speakSet {
     background: #202630;

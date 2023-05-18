@@ -11,7 +11,58 @@ let gameScrollBoxToggler = document.querySelector('.issue-wrap .hash');
 
 let gtAndLt = [... document.querySelectorAll('.gtAndLt div')];
 
-console.log(gtAndLt);
+// console.log(gtAndLt);
+$(function() {
+
+    var $document = $(document);
+    var selector = '[data-rangeslider]';
+    var $element = $(selector);
+
+    try{
+       
+
+        // For ie8 support
+        var textContent = ('textContent' in document) ? 'textContent' : 'innerText';
+
+        // Example functionality to demonstrate a value feedback
+        function valueOutput(element) {
+            var value = element.value;
+            var output = element.parentNode.getElementsByTagName('output')[0] || element.parentNode.parentNode.getElementsByTagName('output')[0];
+            // output[textContent] = value;
+        }
+
+        $document.on('input', 'input[type="range"], ' + selector, function(e) {
+            valueOutput(e.target);
+        });
+
+        // Basic rangeslider initialization
+        $element.rangeslider({
+
+            // Deactivate the feature detection
+            polyfill: false,
+
+            // Callback function
+            onInit: function() {
+                valueOutput(this.$element[0]);
+            },
+
+            // Callback function
+            onSlide: function(position, value) {
+                // console.log('onSlide');
+                document.querySelector('.__range-value').textContent = value;
+                console.log('position: ' + position, 'value: ' + value);
+            },
+
+            // Callback function
+            onSlideEnd: function(position, value) {
+                document.querySelector('.__range-value').textContent = value;
+            }
+        });
+    } catch(e){
+        alert(e.message)
+    }
+});
+
 
 gtAndLt.forEach((gtAndLtBtn) => {
     gtAndLtBtn.addEventListener('click', (e) => {

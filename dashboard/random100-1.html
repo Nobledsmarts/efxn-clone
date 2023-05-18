@@ -6,18 +6,23 @@
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover" />
         <meta name="apple-mobile-web-app-title" id="appTitle" content="FXNB" />
-    <meta name="theme-color" content="#20232C" />
+        <meta name="theme-color" content="#20232C" />
 
         <link rel="stylesheet" href="../assets/css/style.min.css" /><title>FXNB</title>
-    <link href="../assets/css/app.css" rel="stylesheet" />
+        <link href="../assets/css/app.css" rel="stylesheet" />
         <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png" />
-    <meta name="theme-color" content="#4DBA87" />
+        <meta name="theme-color" content="#4DBA87" />
+        <link rel="stylesheet" href="../assets/plugin/rangeslider/rangeslider.css" />
+
 
         <link rel="stylesheet" type="text/css" href="../assets/css/game-inline.css" />
  
         <link rel="stylesheet" type="text/css" href="../assets/css/guessMain.27577de8.css" />
  
-    <link rel="stylesheet" type="text/css" href="../assets/css/chunk-42730796.6d8f812bb.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/random-100.css" />
+        
+        <script defer src="../assets/js/jquery.min.js"></script>
+        <script defer src="../assets/plugin/rangeslider/rangeslider.min.js"></script>
         <script defer src="../assets/js/random100.js"></script>
         
     </head>
@@ -1703,13 +1708,12 @@
                             <!---->
                             <div data-v-626dbe54="">
                                 <div data-v-626dbe54="" class="rangeBox">
-                                    <div data-v-626dbe54="" class="__range-value">34</div>
+                                    <div data-v-626dbe54="" class="__range-value">99</div>
                                     <div data-v-626dbe54="" class="mt-range">
-                                        <div class="mt-range-content">
-                                            <div class="mt-range-runway" style="border-top-width: 18px;"></div>
-                                            <div class="mt-range-progress" style="width: 33%; height: 18px;"></div>
-                                            <div class="mt-range-thumb" style="left: 33%;"></div>
-                                        </div>
+                                        <!-- <div class="mt-range-content"> -->
+                                            <input data-rangeslider type="range" min="1" max="99" step="1" value="300" />
+                                            <!-- <output></output> -->
+                                        <!-- </div> -->
                                     </div>
                                     <div data-v-626dbe54="" class="progress-val-wrap">
                                         <span data-v-626dbe54="" class="progress-val" style="text-align: left;">1</span><span data-v-626dbe54="" class="progress-val" style="color: rgb(252, 212, 52);">50</span>
