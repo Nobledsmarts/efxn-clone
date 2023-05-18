@@ -13,6 +13,50 @@ let quickComputeBtns = document.querySelectorAll('.input-wrap .active');
 
 let filterList = [... document.querySelectorAll('.filter-list .filter-item')];
 
+let addresses = [... document.querySelectorAll('.address')];
+
+let clipboard = new ClipboardJS('.clipboard');
+
+clipboard.on('success', function(e) {
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+
+         let copied = tippy(e.trigger, {
+            content: 'Copied!',
+        });
+        copied.show();
+
+        let timeout = setTimeout(() => {
+            
+            clearTimeout(timeout);
+
+            copied.unmount();
+            copied.destroy();
+        }, 500);
+
+    console.info('Trigger:', e.trigger);
+
+    e.clearSelection();
+});
+
+addresses.length && addresses.forEach((address) => {
+    // address.addEventListener('click', () => {
+    //     let copied = tippy(address, {
+    //         content: 'Copied!',
+    //     });
+    //     copied.show();
+
+    //     let timeout = setTimeout(() => {
+            
+    //         clearTimeout(timeout);
+
+    //         copied.unmount();
+    //         copied.destroy();
+    //     }, 500);
+    // });
+});
+
+
 filterList.length && filterList.forEach((filterItem) => {
     filterItem.addEventListener('click', (e) => {
         filterList.forEach((filterItem2) => {

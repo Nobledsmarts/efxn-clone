@@ -1842,4 +1842,7 @@ table.dataTable  th, table.dataTable td{
     margin-left: -6px;
     border-radius: 100%;
 }
+.tippy-content{
+    font-size: 1.2rem;
+}
 /* amusement end*/
