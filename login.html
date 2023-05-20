@@ -67,14 +67,60 @@
           </nav>
     <!-- </div> -->
     <br><br>
-    <section class="px-md-0 container-fluid landing-wrappe d-non pb-5 mt-5">
-        <div class="col-12 px-md-0 d-flex justify-content-center mt-5">
-            <form action="">
-                <input type="text" class="form-control">
-                <input type="text" class="form-control">
-            </form>       
+    <section class="px-md-0 container-fluid login-wrapper d-non pb-5 mt-5">
+        <div class="col-md-6 m-auto px-md-0 d-flex flex-column justify-content-center mt-5">
+            
+            <div class="mt-5">
+                <h2>Login</h2>
+            </div>
+            
+           
+                <form class="row login-form px-2" action="">
+                    <div class="col-12">
+                        <label for="username">Username</label>
+                        <input id="username" type="text" class="form-control">
+                    </div>
+                    <div  class="col-12">
+                        <label for="password">Password</label>
+                        <input id="password" type="text" class="form-control">
+                    </div>
+                    <div  class="col-12">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>  
+            
         </div>
     </section>
-    
+    <section class="container-fluid footer pt-4 pb-4 pb-md-0 pt-md-5">
+        <div class="row justify-content-center">
+            <div class="col-md-9 p-md-3 p-3  py-md-5">
+                <div class="row gap-3 gap-md-0 flex-column-reverse flex-md-row">
+                    <div class="col-md-8">
+                        <div  class="pc-footer-logo-container" style="text-align: left;">
+                            <img  src="assets/img/logo.png" alt="" style="height: 6rem;" />
+                            <p  class="pc-footer-bottom-paragraph topPlatForm" style="text-align: left;">Leading cryptocurrency trading platform around the world</p>
+                            <p  class="pc-footer-bottom-paragraph">Copyright © 2016 - All rights reserved. v2.2.1</p>
+                            <p >
+                                <span  style="color: rgb(255, 255, 255); margin-right: 15px; cursor: pointer;">Privacy Policy Statement</span><span  style="color: rgb(255, 255, 255); cursor: pointer;">Legal Statement</span>
+                            </p>
+                            <button  class="invite-btn">Agent Management System</button>
+                        </div>
+                                    </div>
+                    <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+                        <div  class="pc-footer-link-group">
+                            <div  id="bottomCode" title="https://FXNB-usdt.com">
+                                <canvas width="90" height="90" style="display: none;"></canvas>
+                                <img
+                                    style="display: block;"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAAAXNSR0IArs4c6QAABEdJREFUeF7tXOF64yAMS9//oXtf9t12hCaWZAPtLtrfEAeEbMuG7rFt23Ob/Pd8/vvE4/E4fK191k+jH9s+799rx0bPdhvRfGZBsa/aQM9Ct7FroDsPm4X5AejIjZUJzAoPyhzYscpcWZv7uN6ugRZyhoFWEOjGmtGdOihgGb76EUBH8oqVWr2cilaNFs3KPWSnnUM0ll3/2RqlGM1+SNGtBvrEVQ30sbiKSILIFqqO1UCjOMyGDmTn9qEDAWSgm17GmVifVQhFCRlt2vfzWyZDBI4ZXWB0tuvWb0rWzm0YnQXIQJ80VNieM5JIM+x8BKNRzLx6rlRmrNQ6S7JsMlTAnJW43969M9BZOouhw0Ab6AICoPFfshy8zB7OotjOKhQlqbJthio2H3VmaKCL22lGb5sZveoU/DlKOJKsVzRtb5L1jKhqPDsNIadeGvYw0CX86JcNNA1VbWAYo9k7aoqcQm4dLYftdSBIsiEI2Y2KLwP9jgs0SvKJGjpID0c7b0YHMsih45Ue4b2OiNFRbEUKMVs6V+J55HGR14wqyV/IF92PZpOPgX7dOgMNpMM0RrcFi1K1sWzPhqMzPFhZhsBiZSuScwoGh4LFQCNoj88NNGgUmdEFgBTwlLGjdH261xFJtlGyTFkkistXtqIaANUHSqAx0MEtKwNduMuNVBBbXCls3sea0Z/AaDbuIRdjkw+yw5bVo5paqOJVSvmQ0QY6/+vtl6ZSdJRloAcC3TaVFKkT9ZQVO4pMVFyVTVZKdVcZS/9YqPSRphBRNoEF6yurJ68NVNYlkc2Mvg4PlaQatkmzbEMTYrXpyCzPesNbGD2r5GUBzLo/ApX9/szWAX0lTNG4qPq6AsZAF0tellG3AVphLQsecsdRMRKFj4wXVfAIT8ErhtmFosSpSCb2m1n9XcHDQHeoR+HKQI+g8l8bHwE068YoiUXdu2ysR7F/4F78mCoxPKoMDfRxuwx0odehMN9A/wagf9NPK9gWgZIzFOlXYrSBvoYaaX5JsRjoRUCv/rfGkSxDrpmVgtk7hYjRStihu3dKdla6d2yverdpoMEusI0jM7pCZ8DEWzI665qoHGYZjUKOsimsFFTibHYd+zfe/q9+JIlEnqYjB2QJpSRDpN0NdLAry4BGu/Q9RyWJsTbPVIbyLmJ15vm00MEuzEDjCzz0TSUluSgFQsVuhpWVd8zoCnrCu7cBWpFiAn6HoawiQZL25Tl7967i4tFRlmLXQAv/1phNsGpvQ7E7anNbO+j7vyoZmtECo7Ox86uMJStDJDfbOVQSnLKW5YxWJhclnAhMA11B+X9mdBaXbMGSlVYorCjryDa50DeWN5WUhaDJX2X9URvWf18JSZKOVhYaSR1WR48CaJQdA33CgEiRKIRRPA5p5wP5Vp+CK/F7hfRS2F/pTy8/BTfQin+JY6MYzT5TmzjsFM1o4fScBfVs3Cqg/wDcT5MofFvarQAAAABJRU5ErkJggg=="
+                                />
+                            </div>
+                            <p  class="bottomTxt">Scan the QR code to download app</p>
+                        </div>
+                                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
