@@ -1,239 +1,237 @@
+html {
+    color: #000;
+    background: #181e25;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+html * {
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+    font-family: sans-serif;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset,
+img {
+    border: 0;
+}
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal;
+}
+del {
+    text-decoration: line-through;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: 500;
+}
+ol,
+ul {
+    list-style: none;
+}
+caption,
+th {
+    text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*font-size: 100%;*/
+    font-weight: 500;
+}
+h1 > span {
+    font-size: 2em !important;
+}
+h2 > span {
+    font-size: 1.5em !important;
+}
+h3 > span {
+    font-size: 1.17em !important;
+}
+h4 > span {
+    font-size: 1em !important;
+}
+h5 > span {
+    font-size: 0.83em !important;
+}
+q:before,
+q:after {
+    content: "";
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+a:hover {
+    text-decoration: none;
+}
+ins,
+a {
+    text-decoration: none;
+}
+.init-loading {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    z-index: 9999;
+}
+.loading {
+    height: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.loading span {
+    display: inline-block;
+    /*vertical-align: middle;*/
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background: #eac83e;
+    border-radius: 50%;
+    -webkit-animation: loading 1s infinite alternate;
+    animation: loading 1s infinite alternate;
+}
 
-            html {
-                color: #000;
-                background: #181e25;
-                overflow-y: scroll;
-                -webkit-text-size-adjust: 100%;
-                -ms-text-size-adjust: 100%;
-            }
-            html * {
-                outline: 0;
-                -webkit-text-size-adjust: none;
-                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            }
-            html,
-            body {
-                font-family: sans-serif;
-            }
-            body,
-            div,
-            dl,
-            dt,
-            dd,
-            ul,
-            ol,
-            li,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6,
-            pre,
-            code,
-            form,
-            fieldset,
-            legend,
-            input,
-            textarea,
-            p,
-            blockquote,
-            th,
-            td,
-            hr,
-            button,
-            article,
-            aside,
-            details,
-            figcaption,
-            figure,
-            footer,
-            header,
-            hgroup,
-            menu,
-            nav,
-            section {
-                margin: 0;
-                padding: 0;
-            }
-            input,
-            select,
-            textarea {
-                font-size: 100%;
-            }
-            table {
-                border-collapse: collapse;
-                border-spacing: 0;
-            }
-            fieldset,
-            img {
-                border: 0;
-            }
-            abbr,
-            acronym {
-                border: 0;
-                font-variant: normal;
-            }
-            del {
-                text-decoration: line-through;
-            }
-            address,
-            caption,
-            cite,
-            code,
-            dfn,
-            em,
-            th,
-            var {
-                font-style: normal;
-                font-weight: 500;
-            }
-            ol,
-            ul {
-                list-style: none;
-            }
-            caption,
-            th {
-                text-align: left;
-            }
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                /*font-size: 100%;*/
-                font-weight: 500;
-            }
-            h1 > span {
-                font-size: 2em !important;
-            }
-            h2 > span {
-                font-size: 1.5em !important;
-            }
-            h3 > span {
-                font-size: 1.17em !important;
-            }
-            h4 > span {
-                font-size: 1em !important;
-            }
-            h5 > span {
-                font-size: 0.83em !important;
-            }
-            q:before,
-            q:after {
-                content: "";
-            }
-            sub,
-            sup {
-                font-size: 75%;
-                line-height: 0;
-                position: relative;
-                vertical-align: baseline;
-            }
-            sup {
-                top: -0.5em;
-            }
-            sub {
-                bottom: -0.25em;
-            }
-            a:hover {
-                text-decoration: none;
-            }
-            ins,
-            a {
-                text-decoration: none;
-            }
-            .init-loading {
-                width: 100%;
-                height: 20px;
-                position: absolute;
-                top: 40%;
-                text-align: center;
-                z-index: 9999;
-            }
-            .loading {
-                height: 20px;
-                display: flex;
-                align-content: center;
-                justify-content: center;
-            }
-            .loading span {
-                display: inline-block;
-                /*vertical-align: middle;*/
-                width: 12px;
-                height: 12px;
-                margin: 5px;
-                background: #eac83e;
-                border-radius: 50%;
-                -webkit-animation: loading 1s infinite alternate;
-                animation: loading 1s infinite alternate;
-            }
-
-            /*
+/*
   * Dots Colors
   * Smarter targeting vs nth-of-type?
   */
-            .loading span:nth-of-type(2) {
-                background: #eac83e;
-                -webkit-animation-delay: 0.2s;
-                animation-delay: 0.2s;
-            }
-            .loading span:nth-of-type(3) {
-                background: #eac83e;
-                -webkit-animation-delay: 0.4s;
-                animation-delay: 0.4s;
-            }
-            .loading span:nth-of-type(4) {
-                background: #eac83e;
-                -webkit-animation-delay: 0.6s;
-                animation-delay: 0.6s;
-            }
-            .loading span:nth-of-type(5) {
-                background: #eac83e;
-                -webkit-animation-delay: 0.8s;
-                animation-delay: 0.8s;
-            }
-            .loading span:nth-of-type(6) {
-                background: #eac83e;
-                -webkit-animation-delay: 1s;
-                animation-delay: 1s;
-            }
-            .loading span:nth-of-type(7) {
-                background: #eac83e;
-                -webkit-animation-delay: 1.2s;
-                animation-delay: 1.2s;
-            }
+.loading span:nth-of-type(2) {
+    background: #eac83e;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.loading span:nth-of-type(3) {
+    background: #eac83e;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.loading span:nth-of-type(4) {
+    background: #eac83e;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.loading span:nth-of-type(5) {
+    background: #eac83e;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+.loading span:nth-of-type(6) {
+    background: #eac83e;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.loading span:nth-of-type(7) {
+    background: #eac83e;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
 
-            /*
+/*
   * Animation keyframes
   * Use transition opacity instead of keyframes?
   */
-            @-webkit-keyframes loading {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-            @keyframes loading {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-            .loading-text {
-                color: #f0a70a;
-                margin-top: 10px;
-                font: 12px verdana;
-                text-transform: uppercase;
-                text-align: center;
-                /*letter-spacing: .1em;*/
-            }
-            .loading-text2 a {
-                color: #828ea1;
-            }
-        
+@-webkit-keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.loading-text {
+    color: #f0a70a;
+    margin-top: 10px;
+    font: 12px verdana;
+    text-transform: uppercase;
+    text-align: center;
+    /*letter-spacing: .1em;*/
+}
+.loading-text2 a {
+    color: #828ea1;
+}
