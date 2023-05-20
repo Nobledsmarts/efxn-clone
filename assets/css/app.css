@@ -96,7 +96,6 @@ input {
         margin: auto !important;
         
     }
-    /* #app */
 }
 @media screen and (max-width : 599px) {
     #app, body {
