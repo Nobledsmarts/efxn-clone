@@ -9,15 +9,13 @@
     <meta name="theme-color" content="#20232C" />
 
         <title>FXNB</title>
-    <link href="../assets/css/app.css" rel="stylesheet" />
+        <link href="../assets/css/app.css" rel="stylesheet" />
         <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png" />
-    <meta name="theme-color" content="#4DBA87" />
-
+        <meta name="theme-color" content="#4DBA87" />
         <link rel="stylesheet" type="text/css" href="../assets/css/game-inline.css" />
- 
         <link rel="stylesheet" type="text/css" href="../assets/css/guessMain.27577de8.css" />
- 
         <link rel="stylesheet" type="text/css" href="../assets/css/crash.ecd66199.css" />
+        <script defer src="../assets/js/crash.js"></script>
         
     </head>
     <body style="font-size: 24px;" cz-shortcut-listen="true">
@@ -1630,6 +1628,13 @@
                         <svg data-v-b995f246="" data-v-415fb5b9="" aria-hidden="true" class="svg-icon icon-arrowRight" style="transform: rotateY(180deg); margin-right: 10px;">
                             <use data-v-b995f246="" xlink:href="#icon-arrowRight"></use>
                         </svg>
+                        <!-- <div data-v-415fb5b9="" class="scrollBox">
+                            <span data-v-415fb5b9="" class="item" style="color: rgb(252, 212, 52);">28.83x</span><span data-v-415fb5b9="" class="item">1.0x</span><span data-v-415fb5b9="" class="item">1.24x</span>
+                            <span data-v-415fb5b9="" class="item" style="">1.55x</span><span data-v-415fb5b9="" class="item" style="color: rgb(252, 212, 52);">5.18x</span><span data-v-415fb5b9="" class="item">1.28x</span>
+                            <span data-v-415fb5b9="" class="item">1.01x</span><span data-v-415fb5b9="" class="item">1.19x</span><span data-v-415fb5b9="" class="item" style="">1.53x</span>
+                            <span data-v-415fb5b9="" class="item" style="color: rgb(252, 212, 52);">11.72x</span>
+                        </div> -->
+                        
                         <div data-v-415fb5b9="" class="scrollBox">
                             <span data-v-415fb5b9="" class="item">1.44x</span><span data-v-415fb5b9="" class="item">1.0x</span><span data-v-415fb5b9="" class="item">1.62x</span><span data-v-415fb5b9="" class="item">1.04x</span>
                             <span data-v-415fb5b9="" class="item" style="">1.74x</span><span data-v-415fb5b9="" class="item" style="color: rgb(252, 212, 52);">3.54x</span>
@@ -1640,7 +1645,7 @@
                     </div>
                     <div data-v-415fb5b9="" class="iframeBox">
                         <!----><!---->
-                        <iframe data-v-415fb5b9="" name="gameIframe" src="../planAssets/plan.html?v=0.5134406249509722" frameborder="0" id="iframe"></iframe>
+                        <iframe data-v-415fb5b9="" name="gameIframe" src="" frameborder="0" id="iframe"></iframe>
                         <div data-v-415fb5b9="" class="countDownBox" id="countDownBox">
                             <p data-v-415fb5b9="">STARTS IN</p>
                             <span data-v-415fb5b9="" id="countDownTxt">2</span>
@@ -1649,364 +1654,453 @@
                     </div>
                     <div data-v-415fb5b9="" class="betInfo">
                         <div data-v-415fb5b9="" class="betHeader">
-                            <span data-v-415fb5b9="" class="item active">Ongoing</span><span data-v-415fb5b9="" class="item">Cashed Out</span><span data-v-415fb5b9="" class="issue">No.1948702732</span>
+                            <span data-v-415fb5b9="" class="item active" data-target="#ongoing">Ongoing</span>
+                            <span data-v-415fb5b9="" class="item" data-target="#cashed-out">Cashed Out</span>
+                            <span data-v-415fb5b9="" class="issue">No.1948702732</span>
                         </div>
-                        <div data-v-415fb5b9="" class="betNum jump">
-                            <span data-v-415fb5b9="" class="left">
-                                <svg data-v-b995f246="" data-v-415fb5b9="" aria-hidden="true" class="svg-icon icon-user"><use data-v-b995f246="" xlink:href="#icon-user"></use></svg> 68 Ongoing
-                            </span>
-                            <span data-v-415fb5b9="" class="right">
-                                <svg data-v-b995f246="" data-v-415fb5b9="" aria-hidden="true" class="svg-icon icon-USDT"><use data-v-b995f246="" xlink:href="#icon-USDT"></use></svg> 36455.661
-                            </span>
+                        <div id="ongoing">
+                            <div data-v-415fb5b9="" class="betNum jump">
+                                <span data-v-415fb5b9="" class="left">
+                                    <svg data-v-b995f246="" data-v-415fb5b9="" aria-hidden="true" class="svg-icon icon-user"><use data-v-b995f246="" xlink:href="#icon-user"></use></svg> 68 Ongoing
+                                </span>
+                                <span data-v-415fb5b9="" class="right">
+                                    <svg data-v-b995f246="" data-v-415fb5b9="" aria-hidden="true" class="svg-icon icon-USDT"><use data-v-b995f246="" xlink:href="#icon-USDT"></use></svg> 36455.661
+                                </span>
+                            </div>
+                            <div data-v-415fb5b9="" class="betBox">
+                                <div data-v-415fb5b9="" class="betBoxTableHeader">
+                                    <div data-v-415fb5b9="" class="header-label">Players</div>
+                                    <!---->
+                                    <div data-v-415fb5b9="" class="header-label">Amount</div>
+                                </div>
+                                <div data-v-415fb5b9="" class="playerBox">
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">wh***an</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">14000.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">sh***00</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">10000.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">iv***27</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">6016.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ja***33</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">1502.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">pe**tz</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">1310.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">cr***on</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">810.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ph***46</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">735.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ju***20</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">600.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ne**le</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">301.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">sh**ry</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">211.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">jo***on</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">146.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">wh***an</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">107.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">wi***ws</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">101.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">sa***te</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">80.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ju***49</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">70.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">au**ey</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">64.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">si***ir</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">51.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">du**nt</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">44.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">cl***45</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">34.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">pa***um</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">33.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">l5***24</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">31.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ma***36</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">31.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">wi***77</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">20.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">vi***40</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">18.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">da***15</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">11.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">co***gy</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">10.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ca***ce</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">10.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">pe***80</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">10.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ee***98</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">10.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">tu***ll</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">8.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">je**in</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">7.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">au***us</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">7.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">el***33</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">7.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">oc***ia</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">7.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">22***da</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">5.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">po***49</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">5.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">zj***20</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">5.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ch***es</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">5.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">vv***69</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">5.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">my***74</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">3.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">mo***55</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">3.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">fr***ca</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">3.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">82***te</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">3.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ce***ne</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">2.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">gf***18</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">2.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">tw***13</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">2.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ch***on</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">1.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">jo***01</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">1.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">mu**ay</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">1.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">sa***on</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">1.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">cl***50</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">1.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ch***ey</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.900</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ad***ts</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.642</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ch***ng</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.630</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ly***97</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.520</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">br***56</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.510</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ol***28</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.500</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">st***ns</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.500</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">cy***ia</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.400</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ba***ny</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.300</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">gl***se</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.200</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ye***op</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.110</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">le***ia</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.110</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">bb***he</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.100</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ch**ch</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.100</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">le***11</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.090</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ch***97</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.030</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ba***23</span></div>
+                                        <!---->
+                                        <div data-v-415fb5b9="" class="item">0.020</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div data-v-415fb5b9="" class="betBox">
-                            <div data-v-415fb5b9="" class="betBoxTableHeader">
-                                <div data-v-415fb5b9="" class="header-label">Players</div>
-                                <!---->
-                                <div data-v-415fb5b9="" class="header-label">Amount</div>
+                        <div id="cashed-out">
+                            <div data-v-415fb5b9="" class="betNum">
+                                <span data-v-415fb5b9="" class="left">
+                                    <svg data-v-b995f246="" data-v-415fb5b9="" aria-hidden="true" class="svg-icon icon-user"><use data-v-b995f246="" xlink:href="#icon-user"></use></svg> 55 Cashed Out
+                                </span>
+                                <span data-v-415fb5b9="" class="right">
+                                    <svg data-v-b995f246="" data-v-415fb5b9="" aria-hidden="true" class="svg-icon icon-USDT"><use data-v-b995f246="" xlink:href="#icon-USDT"></use></svg> 159280.437
+                                </span>
                             </div>
-                            <div data-v-415fb5b9="" class="playerBox">
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">wh***an</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">14000.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">sh***00</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">10000.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">iv***27</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">6016.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ja***33</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">1502.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">pe**tz</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">1310.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">cr***on</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">810.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ph***46</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">735.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ju***20</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">600.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ne**le</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">301.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">sh**ry</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">211.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">jo***on</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">146.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">wh***an</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">107.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">wi***ws</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">101.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">sa***te</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">80.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ju***49</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">70.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">au**ey</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">64.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">si***ir</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">51.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">du**nt</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">44.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">cl***45</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">34.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">pa***um</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">33.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">l5***24</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">31.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ma***36</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">31.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">wi***77</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">20.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">vi***40</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">18.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">da***15</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">11.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">co***gy</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">10.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ca***ce</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">10.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">pe***80</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">10.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ee***98</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">10.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">tu***ll</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">8.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">je**in</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">7.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">au***us</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">7.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">el***33</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">7.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">oc***ia</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">7.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">22***da</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">5.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">po***49</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">5.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">zj***20</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">5.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ch***es</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">5.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">vv***69</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">5.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">my***74</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">3.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">mo***55</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">3.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">fr***ca</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">3.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">82***te</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">3.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ce***ne</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">2.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">gf***18</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">2.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">tw***13</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">2.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ch***on</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">1.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">jo***01</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">1.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">mu**ay</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">1.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">sa***on</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">1.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">cl***50</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">1.000</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ch***ey</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.900</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ad***ts</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.642</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ch***ng</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.630</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ly***97</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.520</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">br***56</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.510</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ol***28</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.500</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">st***ns</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.500</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">cy***ia</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.400</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ba***ny</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.300</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">gl***se</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.200</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ye***op</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.110</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">le***ia</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.110</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">bb***he</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.100</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ch**ch</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.100</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">le***11</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.090</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ch***97</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.030</div>
-                                </div>
-                                <div data-v-415fb5b9="" class="player-item">
-                                    <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ba***23</span></div>
-                                    <!---->
-                                    <div data-v-415fb5b9="" class="item">0.020</div>
-                                </div>
-                            </div>
+                            
+                            <div data-v-415fb5b9="" class="betBox">
+                                <div data-v-415fb5b9="" class="betBoxTableHeader">
+                                    <div data-v-415fb5b9="" class="header-label">Players</div>
+                                    <div data-v-415fb5b9="" class="header-label">@</div>
+                                    <div data-v-415fb5b9="" class="header-label">Amount</div>
+                                </div>
+                                <div data-v-415fb5b9="" class="playerBox jumpListStyle">
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">te***ss</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 1.24</div>
+                                        <div data-v-415fb5b9="" class="item">12400.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ph***46</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 1.43</div>
+                                        <div data-v-415fb5b9="" class="item">2288.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">vi***40</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 1.34</div>
+                                        <div data-v-415fb5b9="" class="item">564.140</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ad***de</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 1.02</div>
+                                        <div data-v-415fb5b9="" class="item">52.020</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ea**ha</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 1.00</div>
+                                        <div data-v-415fb5b9="" class="item">31.000</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">de***50</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 1.22</div>
+                                        <div data-v-415fb5b9="" class="item">18.300</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">el***33</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 1.75</div>
+                                        <div data-v-415fb5b9="" class="item">17.500</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ce***ne</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 1.26</div>
+                                        <div data-v-415fb5b9="" class="item">12.600</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">el***ra</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 1.32</div>
+                                        <div data-v-415fb5b9="" class="item">0.792</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">ad***ss</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 1.33</div>
+                                        <div data-v-415fb5b9="" class="item">0.691</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">wi***ws</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 2.07</div>
+                                        <div data-v-415fb5b9="" class="item">0.517</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">fa***50</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 1.05</div>
+                                        <div data-v-415fb5b9="" class="item">0.189</div>
+                                    </div>
+                                    <div data-v-415fb5b9="" class="player-item">
+                                        <div data-v-415fb5b9="" class="item"><span data-v-415fb5b9="" class="val">an***86</span></div>
+                                        <div data-v-415fb5b9="" class="item" style="text-align: center; font-size: 12px;">× 1.60</div>
+                                        <div data-v-415fb5b9="" class="item">0.032</div>
+                                    </div>
+                                </div>
+                            </div>                            
                         </div>
                     </div>
                     <div data-v-415fb5b9="" class="betOrder">
@@ -2120,7 +2214,7 @@
             <!----><!----><!----><!---->
         </div>
   
-                <div data-v-2d357718="" class="topBox" style="display: none;">
+        <div data-v-2d357718="" class="rule topBox" style="display: none;">
             <b data-v-2d357718="" class="topAngle" style="left: 50%;"></b>
             <div data-v-2d357718="" class="itemBox">
                 <a href="../dashboard/deposit.html" data-v-2d357718="" class="item">

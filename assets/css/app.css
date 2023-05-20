@@ -3521,7 +3521,7 @@ svg[rtl][data-v-b995f246] {
     z-index: 44;
 }
 
-.scrollBox.SB_STYLE, .mask.mask_history, .scrollBox{
+.scrollBox.SB_STYLE, .mask.mask_history, .scrollBox:not(.plane-container .scrollBox){
     display: none;
 }
 

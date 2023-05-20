@@ -461,6 +461,9 @@ body::befor {
     #option{
         /* background-size: 100% 100%; */
     }
+}
+
+@media (max-width : 992px) {
     .menu-bar{
         display: block;
         width: 100%;
