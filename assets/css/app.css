@@ -98,6 +98,11 @@ input {
     }
     /* #app */
 }
+@media screen and (max-width : 599px) {
+    #app, body {
+        width : 100%
+    }
+}
 #speakSet {
     background: #202630;
 }
