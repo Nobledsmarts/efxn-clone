@@ -183,17 +183,18 @@ betDivs && betDivs.forEach((betDiv) => {
 
 betBtn.addEventListener('click', (e) => {
     timer.start();
-   
-    document.querySelector('.selections').innerHTML = selections.reduce((template, selection) => {
-        return `
-            ${template}
-            <div class="selection">
-                <span class="label">${selection.label}</span>
-                <span class="num">${selection.num}</span>
-            </div>
-        `
+    document.querySelector('.selections')
+        .innerHTML = selections.reduce((template, selection) => {
+            return `
+                ${template}
+                <div class="selection">
+                    <span class="label">${selection.label}</span>
+                    <span class="num">${selection.num}</span>
+                </div>
+            `
     }, "");
     modal.showModal();
+    sendToServer(selections);
 });
 
 function backdrop(action){
@@ -201,7 +202,25 @@ function backdrop(action){
 }
 
 async function sendToServer(selections){
-
+    try {
+        let response = await fetch('apiEndPoint', {
+            method : 'post',
+            headers : {
+                "Content-Type" : "application/json",
+                "X-Requested-With"  : "XMLHttpRequest"
+              },
+            body : JSON.stringify(selections)
+        });
+        let data = await response.json();
+        
+        console.log(data);
+        
+    } catch (err){
+        console.log(err.message);
+    } finally {
+       //hide modal
+        //modal.hideModal();
+    }
 }
 // svg-icon icon-delete
 
