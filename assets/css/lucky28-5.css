@@ -990,19 +990,22 @@ input.hasStyle[data-v-2d357718]:focus {
     z-index: 99;
 }
 
-.bet-modal{
+.bet-modal-content{
     z-index: 99999;
     position: absolute !important;
     margin: auto auto !important;
     width: 85% !important;
     /* transform: translate(-50%, -50%); */
 }
-.bet-backdrop {
+.bet-modal-content .header{
+    padding:  0px 0.5rem;
+}
+.bet-modal {
    
     position: fixed !important;
     top: 1.36rem;
     z-index: 99;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background:rgb(0 0 0 / 70%);
@@ -1012,4 +1015,131 @@ input.hasStyle[data-v-2d357718]:focus {
     
     left: 0;
     top: 0;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300");
+
+button[data-setter] {
+    outline: none;
+    background: transparent;
+    border: none;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+    width: 25px;
+    height: 30px;
+    color: #e6c233;
+    cursor: pointer;
+}
+
+button[data-setter]:hover {
+    opacity: 0.5;
+}
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count-container {
+    position: relative;
+    margin: 0.5rem;
+}
+
+.setters {
+    position: absolute;
+    left: 85px;
+    top: 75px;
+}
+
+.minutes-set {
+    float: left;
+    margin-right: 28px;
+}
+
+.seconds-set {
+    float: right;
+}
+
+.controlls {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-remain-time {
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: #e6c233;
+}
+
+
+
+
+.e-c-base {
+    fill: none;
+    stroke: #b6b6b6;
+    stroke-width: 4px;
+}
+
+.e-c-progress {
+    fill: none;
+    stroke: #e6c233;
+    stroke-width: 4px;
+    transition: stroke-dashoffset 0.7s;
+}
+
+.e-c-pointer {
+    fill: #fff;
+    stroke: #e6c233;
+    stroke-width: 2px;
+}
+
+#e-pointer {
+    transition: transform 0.7s;
+}
+
+.selections{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    padding: 0.14rem;
+    max-height: 200px;
+    overflow-y: scroll;
+    justify-content: center;
+}
+.picks *{
+    color: #fff;
+}
+.picks{
+    padding: 0.5rem;
+}
+
+.selections .selection {
+    padding: 0.1rem;
+    width: 2rem;
+    zoom: 0.7;
+    /* white-space: ; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.106667rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: #29313c; */
+    color: #fff !important;
+    background: #e6c233;
+
+}
+.selection * {
+    color: #333;
 }

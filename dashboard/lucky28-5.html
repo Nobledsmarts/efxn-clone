@@ -16,6 +16,9 @@
         <link rel="stylesheet" href="../assets/css/lucky28-5.css">
         <link rel="stylesheet" href="../assets/css/app.css">
         <link rel="stylesheet" href="../assets/css/lucky28-main.css">
+
+        <script src="../assets/js/lucky28-modal.js" defer></script>
+        
         <script src="../assets/js/lucky28.js" defer></script>
 
         <link rel="stylesheet" type="text/css" href="../assets/css/game-inline.css" />
@@ -2230,19 +2233,268 @@
                 </a>
             </div>
         </div>
-        <div data-v-2d357718="" class="mask mask_top" style="display: ;"></div>
-        <div data-v-2d357718="" class="bet-backdrop" style="display: ;">
-            <div data-v-45832732="" class="mint-popup popup-container bet-modal" id="data-18bb2061a9d94">
+        <div data-v-2d357718="" class="mask mask_top" style="display: none;"></div>
+        <div data-v-2d357718="" class="bet-modal">
+            <div data-v-45832732="" class="mint-popup popup-container bet-modal-content" id="data-18bb2061a9d94">
                 <div data-v-45832732="" class="header">
-                    Notifications <svg data-v-b995f246="" data-v-45832732="" aria-hidden="true" class="svg-icon icon-close" style="box-sizing: content-box; padding: 10px 15px;"><use data-v-b995f246="" xlink:href="#icon-close"></use></svg>
+                    Please Wait... <svg data-v-b995f246="" data-v-45832732="" aria-hidden="true" class="svg-icon icon-close" style="box-sizing: content-box; padding: 10px 15px;"><use data-v-b995f246="" xlink:href="#icon-close"></use></svg>
                 </div>
                 <div data-v-45832732="" class="content">
                     <div class="popup-content" style="pointer-events: auto;">
-                        <div class="mint-swipe">
-                            <div class="mint-swipe-items-wrap"></div>
-                            <div class="mint-swipe-indicators"></div>
+                        <div class="count-container">
+                            <div class="circle">
+                                <svg width="150" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+                                    <g transform="translate(110,110)">
+                                        <circle r="100" class="e-c-base" />
+                                        <g transform="rotate(-90)">
+                                            <circle r="100" class="e-c-progress" />
+                                            <g id="e-pointer">
+                                                <circle cx="100" cy="0" r="8" class="e-c-pointer" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="controlls">
+                                <div class="display-remain-time">00:10</div>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="picks">
+                            <h4>
+                                Picks
+                            </h4>
+                          </div>
+                          <div class="selections">
+                            <div class="selection">
+                                <span class="label">Big</span>
+                                <!---->
+                                <span class="num">1.96x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">Small</span>
+                                <!---->
+                                <span class="num">1.96x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">Odd</span>
+                                <!---->
+                                <span class="num">1.96x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">Even</span>
+                                <!---->
+                                <span class="num">1.96x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">Big-Odd</span>
+                                <!---->
+                                <span class="num">3.92x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">Big-Even</span>
+                                <!---->
+                                <span class="num">3.92x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">Small-Odd</span>
+                                <!---->
+                                <span class="num">3.92x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">Small-Even</span>
+                                <!---->
+                                <span class="num">3.92x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">Minimum</span>
+                                <!---->
+                                <span class="num">17.49x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">Maximum</span>
+                                <!---->
+                                <span class="num">17.49x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">0</span>
+                                <!---->
+                                <span class="num">980x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">1</span>
+                                <!---->
+                                <span class="num">326.66x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">2</span>
+                                <!---->
+                                <span class="num">163.33x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">3</span>
+                                <!---->
+                                <span class="num">98x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">4</span>
+                                <!---->
+                                <span class="num">65.33x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">5</span>
+                                <!---->
+                                <span class="num">46.66x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">6</span>
+                                <!---->
+                                <span class="num">34.99x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">7</span>
+                                <!---->
+                                <span class="num">27.22x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">8</span>
+                                <!---->
+                                <span class="num">21.77x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">9</span>
+                                <!---->
+                                <span class="num">17.81x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">10</span>
+                                <!---->
+                                <span class="num">15.55x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">11</span>
+                                <!---->
+                                <span class="num">14.2x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">12</span>
+                                <!---->
+                                <span class="num">13.42x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">13</span>
+                                <!---->
+                                <span class="num">13.06x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">14</span>
+                                <!---->
+                                <span class="num">13.06x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">15</span>
+                                <!---->
+                                <span class="num">13.42x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">16</span>
+                                <!---->
+                                <span class="num">14.2x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">17</span>
+                                <!---->
+                                <span class="num">15.55x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">18</span>
+                                <!---->
+                                <span class="num">17.81x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">19</span>
+                                <!---->
+                                <span class="num">21.77x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">20</span>
+                                <!---->
+                                <span class="num">27.22x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">21</span>
+                                <!---->
+                                <span class="num">34.99x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">22</span>
+                                <!---->
+                                <span class="num">46.66x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">23</span>
+                                <!---->
+                                <span class="num">65.33x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">24</span>
+                                <!---->
+                                <span class="num">98x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">25</span>
+                                <!---->
+                                <span class="num">163.33x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">26</span>
+                                <!---->
+                                <span class="num">326.66x</span>
+                                <!---->
+                            </div>
+                            <div class="selection">
+                                <span class="label">27</span>
+                                <!---->
+                                <span class="num">980x</span>
+                                <!---->
+                            </div>
                         </div>
-                        <p class="showDetail">Details</p>
                     </div>
                 </div>
                 <span></span>

@@ -16,6 +16,24 @@ let filterList = [... document.querySelectorAll('.filter-list .filter-item')];
 
 let addresses = [... document.querySelectorAll('.address')];
 
+let betModal = document.querySelector('.bet-modal');
+
+let closeModal = betModal.querySelector('.svg-icon.icon-close');
+
+const modal = {
+    showModal(){
+        backdrop('flex');
+    },
+    hideModal(){
+        backdrop('none')
+    }
+}
+
+closeModal.addEventListener('click', () => {
+    timer.reset();
+    modal.hideModal();
+})
+
 if(window.ClipboardJS){
     let clipboard = new ClipboardJS('.clipboard');
 
@@ -164,12 +182,22 @@ betDivs && betDivs.forEach((betDiv) => {
 });
 
 betBtn.addEventListener('click', (e) => {
-    backdrop('');
-    // alert('hey');
+    timer.start();
+   
+    document.querySelector('.selections').innerHTML = selections.reduce((template, selection) => {
+        return `
+            ${template}
+            <div class="selection">
+                <span class="label">${selection.label}</span>
+                <span class="num">${selection.num}</span>
+            </div>
+        `
+    }, "");
+    modal.showModal();
 });
 
 function backdrop(action){
-    document.querySelector('.mask.mask_top').style.display = action;
+    betModal.style.display = action;
 }
 
 async function sendToServer(selections){
