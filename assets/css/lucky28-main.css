@@ -1324,6 +1324,7 @@ input.hasStyle[data-v-8566e9ca]:focus {
     flex-wrap: wrap;
     padding-top: 0.533333rem;
 }
+
 .game-center-container .betMain .betPanel .betDiv[data-v-8566e9ca] {
     width: calc(25% - 0.2rem);
     height: 1.333333rem;
@@ -2655,4 +2656,14 @@ input.hasStyle[data-v-8566e9ca]:focus {
     line-height: 0.853333rem;
     padding: 0 1.2rem;
     margin-bottom: 0.533333rem;
+}
+
+/* scrolling fix */
+
+@media screen and (max-width: 400px) {
+    .betPanel {
+        height: 70%;
+        padding-bottom: 2rem;
+        overflow-y: scroll;
+    }   
 }
