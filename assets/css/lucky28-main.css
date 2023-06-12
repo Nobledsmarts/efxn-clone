@@ -2659,11 +2659,10 @@ input.hasStyle[data-v-8566e9ca]:focus {
 }
 
 /* scrolling fix */
-
 @media screen and (max-width: 400px) {
     .betPanel {
         height: 70%;
-        padding-bottom: 2rem;
+        /* padding-bottom: 1rem; */
         overflow-y: scroll;
     }   
 }
