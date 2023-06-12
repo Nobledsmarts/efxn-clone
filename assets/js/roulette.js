@@ -132,3 +132,21 @@ betDivs.length && [...betDivs, ...numBoxes].forEach((betDiv) => {
 
 // svg-icon icon-delete
 
+
+
+const fixGameScreen = () => {
+    let topBgHeight = parseFloat(getComputedStyle(document.querySelector('.topBg')).height);
+    let cHeaderHeight = parseFloat(getComputedStyle(document.querySelector('.cHeader')).height);
+    let betOrderHeight = parseFloat(getComputedStyle(document.querySelector('.betOrder')).height);
+    let betBtnBoxHeight = parseFloat(getComputedStyle(document.querySelector('.betBtnBox')).height);
+    let screenHeight = window.innerHeight;
+
+    let gameScreenHeight = screenHeight - topBgHeight - cHeaderHeight - betOrderHeight - betBtnBoxHeight;
+
+    document.querySelector('.page-content').style.height = gameScreenHeight + 'px';
+
+    document.querySelector('.betMain').style.height = 'max-content';
+    // console.log(gameScreenHeight);
+}
+
+['load', 'resize'].forEach((ev) => window.addEventListener(ev, fixGameScreen));
