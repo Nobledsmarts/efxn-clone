@@ -224,6 +224,9 @@ async function sendToServer(selections){
 }
 // svg-icon icon-delete
 
+
+/* fix screen scrolling */
+
 const fixGameScreen = () => {
     let topBgHeight = parseFloat(getComputedStyle(document.querySelector('.topBg')).height);
     let cHeaderHeight = parseFloat(getComputedStyle(document.querySelector('.cHeader')).height);
